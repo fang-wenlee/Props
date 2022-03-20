@@ -1,4 +1,3 @@
-import Employees from "./employee";
 import React, { useState } from "react";
 import "./styles.css";
 
@@ -91,32 +90,15 @@ const employeeData = [
 ];
 
 export default function App() {
-  const [count, setCount] = useState(0);
-  const [a, b, ...rest] = [1, 2, 3, 4, 5, 6];
-  console.log("3 after: ", rest);
-  console.log("1st: ", a);
-  console.log("2nd:  ", b);
+  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <div className="App">
-      <h1>Employee Table</h1>
-      <hr />
-
-      {employeeData.map((employee) => {
-        return <Employees key={employee.id} {...employee} />;
-      })}
-
-      {/* {employeeData.map((employee) => {
-        const { firstName, lastName, age } = employee;
-        return (
-          <Employees firstName={firstName} lastName={lastName} age={age} />
-        );
-      })} */}
-
-      {/* <Employees firstName="fang-wen" lastName="lee" age="20" />
-      <Employees firstName="Pohan" lastName="Lin" age="20" />
-      <Employees firstName="Tony" lastName="Foo" age="20" />
-      <Employees firstName="Emily" lastName="Chung" age="20" /> */}
+      <h1>Welcome to the app!</h1>
+      <button onClick={() => setLoggedIn(!loggedIn)}>
+        {loggedIn ? "Log out" : "Log In"}
+      </button>
+      {loggedIn ? <h3>Hello Fawn</h3> : <h3>Please Login</h3>}
     </div>
   );
 }

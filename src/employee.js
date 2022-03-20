@@ -19,17 +19,15 @@ const Employees = (props) => {
   // const { plantZone, alienZone } = zone;
   return (
     <div>
-      <h3>
-        Employee name: {firstName.toUpperCase()} {lastName.toUpperCase()} who is
-        age is {age}; <br />
-        <h3> Employee Salary is {salary}</h3>
-        <h3> the address salry is {addressSalary}</h3>
-        <br />
-        {street} {country} {province}
-        <br />
-        {plantZone} {alienZone}
-        {/* {address.street} */}
-      </h3>
+      Employee name: {firstName.toUpperCase()} {lastName.toUpperCase()} who is
+      age is {age}; <br />
+      <h3> Employee Salary is {salary}</h3>
+      <h3> the address salry is {addressSalary}</h3>
+      <br />
+      {street} {country} {province}
+      <br />
+      {plantZone} {alienZone}
+      {/* {address.street} */}
     </div>
   );
 };

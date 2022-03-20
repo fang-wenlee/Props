@@ -14,3 +14,10 @@ How to modify multiple "same string" at one time 1. highligt 2. ctl+F2
 28:40 - How to get rid of "Warning, each child in a list should have a unique key prop" in React when using Map (adding and passing in a key to your component)
 
 #destructuring (simple and complex )
+
+//==================================
+
+- ForEach vs Map in es6 Javascript and their uses in React
+- Why you should use maps to iterate through arrays and objects in React
+- How does mapping in React work
+- How to display multiple objects nested inside components dynamically by mapping
